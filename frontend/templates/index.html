@@ -1,0 +1,24 @@
+<!-- C:\Users\Unisinu\Desktop\RecordApp\frontend\templates\index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('frontend.static', filename='styles.css') }}">
+    <title>Probable Combinations App</title>
+</head>
+<body>
+    <div class="container">
+        <label for="numbers">Inserta números (separados por guión):</label>
+        <input type="text" id="numbers" placeholder="Ej: 1234-5678-9012">
+        <button onclick="calculateCombinations()">Calcular Combinaciones</button>
+
+        <table id="combinationsTable">
+            <!-- Aquí se mostrarán las combinaciones calculadas -->
+        </table>
+    </div>
+
+    <script src="{{ url_for('frontend.static', filename='script.js') }}"></script>
+</body>
+</html>
